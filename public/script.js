@@ -393,7 +393,7 @@ function gen() {
 			method: "POST",
 			body: JSON.stringify({
 				userId: cokkie('username'),
-				nopl: Number.parseInt(n)
+				nopl: (n)
 
 			}),
 			headers: {
