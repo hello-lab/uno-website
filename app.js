@@ -64,7 +64,7 @@ const fs = require('node:fs');
 
 data = fs.readFileSync('index.html', 'utf8');
 app.get('/', (req, res) => {
-    res.send(data)
+    res.redirect('/index.html')
 })
 
 app.use(bodyParser.json()) // for parsing application/json
